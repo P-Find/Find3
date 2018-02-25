@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="container">  
+    <div class="jumbotron text-center">
+      <h1>Բարի գալուստ MediSeen</h1>
+      <p class="lead">Գտիր քեզ անհրաժեշտ դեղը կամ դեղատունը</p>
+    </div>
+      <img style="width: 100%; height: 600px" src="{{ url_for ('static', filename = 'img/home.jpg') }}" alt="">
+  </div>
+{% endblock %}

@@ -1,0 +1,76 @@
+html, body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    height: calc(100% - 50px);
+}
+
+.bottom-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+    .bottom-buttons:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+.prev-button,
+.next-button {
+    cursor: pointer;
+    width: 50%;
+    height: inherit;
+    font-size: 18px;
+    color: green;
+}
+
+.prev-button {
+    float: left;
+}
+
+.next-button {
+    float: right;
+}
+
+@media only screen and (max-width: 768px) {
+    #map {
+        height: calc(100% - 70px);
+    }
+
+    .bottom-buttons {
+        height: 70px;
+    }
+
+    .prev-button,
+    .next-button {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #map {
+        height: calc(100% - 90px);
+
+    }
+
+    .bottom-buttons {
+        height: 90px;
+    }
+
+    .prev-button,
+    .next-button {
+        font-size: 22px;
+    }
+}
+
+/* API KEY */
+/* AIzaSyDrZJnQRb7l6EyCvGQn3xmIFWAKDHAl1Hs */
